@@ -63,7 +63,79 @@ CardVideo &CardVideo::operator=(const CardVideo &other)
     return *this;
 }
 
+void CardVideo::setVideoCardType(const CardVideo::TVideoCardType l_videocardtype)
+{
+    videocardtype = l_videocardtype;
+}
 
+CardVideo::TVideoCardType CardVideo::getVideocardType() const
+{
+    return videocardtype;
+}
+
+
+
+void CardVideo::setCardSpeed(const std::string l_speed)
+{
+    speed = l_speed;
+}
+
+std::string CardVideo::getCardSpeed() const
+{
+    return speed;
+}
+
+
+
+void CardVideo::setHDMI_input(const int l_hdmi_input)
+{
+    hdmi_input = l_hdmi_input;
+}
+
+int CardVideo::getHDMI_input() const
+{
+    return hdmi_input;
+}
+
+
+
+void CardVideo::setMaxResolution(const std::string l_max_resolution)
+{
+    max_resolution = l_max_resolution;
+}
+
+std::string CardVideo::getMaxResolution() const
+{
+    return max_resolution;
+}
+
+
+
+void CardVideo::setAmountOfVideoMemory(const std::string l_amount_of_video_memory)
+{
+    amount_of_video_memory = l_amount_of_video_memory;
+}
+
+std::string CardVideo::getAmountOfVideoMemory() const
+{
+    return amount_of_video_memory;
+}
+
+
+
+void CardVideo::show() const
+{
+    const char *strVideoCardType[] = {"undefine", "discrete", "build_in", "hybrid", "external"};
+    cout << "Title: " << getTitle().brand << " " << getTitle().model << " " << getTitle().number << "\n"
+         << "Type of video card: " << strVideoCardType[videocardtype] << "\n"
+         << "Speed: " << getCardSpeed() << "\n"
+         << "HDMI inputs: " << getHDMI_input() << "\n"
+         << "Max resolution: " << getMaxResolution() << '\n'
+         << "Amount of video memory: " << getAmountOfVideoMemory() << "\n"
+         << "Year of manufacture: " << getYOM() << "\n"
+         << "Guarantee" << getGuarantee() << "\n"
+         << endl;
+}
 
 
 
