@@ -4,4 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        card_base.cpp \
         main.cpp
+
+HEADERS += \
+    card_base.hpp
