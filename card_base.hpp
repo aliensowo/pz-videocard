@@ -37,7 +37,7 @@ public:
     std::string getYOM() const;
 
     //  создать и получить есть ли гарантия на товар
-    bool getGuarantee() const;
+    std::string getGuarantee() const;
     void takeGuarantee() const;
     void putGuarantee() const;
 

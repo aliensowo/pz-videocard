@@ -71,11 +71,14 @@ std::string BaseDetail::getYOM() const
 }
 
 //  func get guarantee
-bool BaseDetail::getGuarantee() const
+std::string BaseDetail::getGuarantee() const
 {
-    return guarantee;
+    if (guarantee){
+        return "Да";
+    }else{
+        return "Нет";
+    }
 }
-
 // func take guarantee
 void BaseDetail::takeGuarantee() const
 {

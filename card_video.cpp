@@ -126,14 +126,14 @@ std::string CardVideo::getAmountOfVideoMemory() const
 void CardVideo::show() const
 {
     const char *strVideoCardType[] = {"undefine", "discrete", "build_in", "hybrid", "external"};
-    cout << "Title: " << getTitle().brand << " " << getTitle().model << " " << getTitle().number << "\n"
-         << "Type of video card: " << strVideoCardType[videocardtype] << "\n"
-         << "Speed: " << getCardSpeed() << "\n"
-         << "HDMI inputs: " << getHDMI_input() << "\n"
-         << "Max resolution: " << getMaxResolution() << '\n'
-         << "Amount of video memory: " << getAmountOfVideoMemory() << "\n"
-         << "Year of manufacture: " << getYOM() << "\n"
-         << "Guarantee" << getGuarantee() << "\n"
+    cout << "Название: : " << getTitle().brand << " " << getTitle().model << " " << getTitle().number << "\n"
+         << "Тип видеокарты: : " << strVideoCardType[videocardtype] << "\n"
+         << "Частота памяти: " << getCardSpeed() << "\n"
+         << "HDMI входы: " << getHDMI_input() << "\n"
+         << "Максимальное разрешение: " << getMaxResolution() << '\n'
+         << "Объем видео памяти: : " << getAmountOfVideoMemory() << "\n"
+         << "Год изготовления: " << getYOM() << "\n"
+         << "Наличие гарантии: " << getGuarantee() << "\n"
          << endl;
 }
 
