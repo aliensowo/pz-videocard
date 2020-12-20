@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         card_base.cpp \
+        card_video.cpp \
         main.cpp
 
 HEADERS += \
-    card_base.hpp
+    card_base.hpp \
+    card_video.hpp

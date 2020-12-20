@@ -28,7 +28,21 @@ public:
     ~BaseDetail();
     BaseDetail &operator=(const BaseDetail &other);
 
+    //  создать и получить Название
+    void setTitle(const Title l_title);
+    Title getTitle() const;
 
+    //  создать и получить год изготовления
+    void setYOM(const std::string l_year_manufacture);
+    std::string getYOM() const;
+
+    //  создать и получить есть ли гарантия на товар
+    bool getGuarantee() const;
+    void takeGuarantee() const;
+    void putGuarantee() const;
+
+    // показать
+    void show() const;
 
 };
 
