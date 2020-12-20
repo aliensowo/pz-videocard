@@ -32,6 +32,8 @@ public:
 
     CardVideo &operator=(const CardVideo &other);
 
+    // functions
+
     void setVideoCardType(const TVideoCardType l_videocardtype);
     TVideoCardType getVideocardType() const;
 
@@ -47,7 +49,7 @@ public:
     void setAmountOfVideoMemory(const std::string l_amount_of_video_memory);
     std::string getAmountOfVideoMemory() const;
 
-    void show();
+    void show() const;
 };
 
 #endif // CARD_VIDEO_HPP
