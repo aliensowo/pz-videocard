@@ -59,9 +59,9 @@ BaseDetail::Title BaseDetail::getTitle() const
 }
 
 //  func set years of manufacture
-void BaseDetail::setYOM(const std::string l_year_manufacture)
+void BaseDetail::setYOM(const std::string l_year_of_manufacture)
 {
-    year_of_manufacture = l_year_manufacture;
+    year_of_manufacture = l_year_of_manufacture;
 }
 
 //  func get years of manufacture
@@ -94,11 +94,11 @@ void BaseDetail::putGuarantee() const
 // func show
 void BaseDetail::show() const
 {
-    cout << "Model: (" << title.brand << " "
+    cout << "Название: (" << title.brand << " "
                        << title.model << " "
                        << title.number << ")\n"
-         << "Year of manufacture" << year_of_manufacture << "\n"
-         << "Guarantee" << guarantee << "\n"
+         << "Год изготовления: " << year_of_manufacture << "\n"
+         << "Гарантия: " << guarantee << "\n"
          << endl;
 }
 

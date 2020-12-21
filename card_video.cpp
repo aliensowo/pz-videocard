@@ -7,10 +7,10 @@ using namespace std;
 CardVideo::CardVideo():
     BaseDetail(),
     videocardtype(undefine),
-    speed("1000 РњР“С†"),
+    speed("1000 Мгц"),
     hdmi_input(2),
     max_resolution("1080x720"),
-    amount_of_video_memory("2 Р“Р±")
+    amount_of_video_memory("2 Гб")
 {
 
 }
@@ -125,7 +125,7 @@ std::string CardVideo::getAmountOfVideoMemory() const
 
 void CardVideo::show() const
 {
-    const char *strVideoCardType[] = {"undefine", "discrete", "build_in", "hybrid", "external"};
+    const char *strVideoCardType[] = {"undefine", "Дискретная", "Встроенная", "Гибридная", "Внешняя"};
     cout << "Название: : " << getTitle().brand << " " << getTitle().model << " " << getTitle().number << "\n"
          << "Тип видеокарты: : " << strVideoCardType[videocardtype] << "\n"
          << "Частота памяти: " << getCardSpeed() << "\n"

@@ -33,7 +33,7 @@ public:
     Title getTitle() const;
 
     //  создать и получить год изготовления
-    void setYOM(const std::string l_year_manufacture);
+    void setYOM(const std::string l_year_of_manufacture);
     std::string getYOM() const;
 
     //  создать и получить есть ли гарантия на товар
